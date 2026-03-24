@@ -1,0 +1,20 @@
+# Build output
+target/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+*.swp
+
+# macOS
+.DS_Store
+
+# AI assistant
+.claude/
+
+# Internal files (design docs, notes, archives, test screenshots)
+.internal/

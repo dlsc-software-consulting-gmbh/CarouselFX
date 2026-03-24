@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.dlsc.carousel</groupId>
+        <artifactId>carousel-parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>carousel-samples</artifactId>
+    <packaging>jar</packaging>
+
+    <name>CarouselFX Samples</name>
+    <description>CarouselFX sample applications</description>
+
+    <properties>
+        <!-- Samples use a concrete JavaFX version for running demos.
+             Override this to match your JDK version. -->
+        <javafx.version>17.0.15</javafx.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.dlsc.carousel</groupId>
+            <artifactId>carousel</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <!-- Samples need JavaFX at compile+runtime (not provided) -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-swing</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.dlsc.gemsfx</groupId>
+            <artifactId>gemsfx</artifactId>
+            <version>2.73.0</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.dlsc.carousel.samples.CarouselShowcase</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
