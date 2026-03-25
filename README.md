@@ -226,7 +226,7 @@ focusing on a specific feature area:
 | `LifecycleEventDemo` | Driving page content animations through lifecycle events |
 | `AutoPlayProgressDemo` | Building a countdown indicator for auto-play page switching |
 | `SimpleAppDemo` | Minimal app skeleton using Carousel for page navigation with nesting |
-| `CarouselAppDemo` | Full-featured app layout with CSS styling, nested carousels and page animations |
+| `CarouselAppDemo` | Using Carousel as a full application navigation container with sidebar routing, nested carousels and page lifecycle animations |
 
 ### Running a demo
 

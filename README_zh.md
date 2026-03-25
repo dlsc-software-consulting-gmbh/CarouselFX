@@ -221,7 +221,7 @@ page.getChildren().add(new Label("标题")); // 在图片上叠加内容
 | `LifecycleEventDemo` | 利用生命周期事件驱动页面内容动画 |
 | `AutoPlayProgressDemo` | 实现自动播放时的页面切换倒计时指示器 |
 | `SimpleAppDemo` | 使用轮播图作为应用导航骨架的最简示例，支持嵌套 |
-| `CarouselAppDemo` | 完整的应用布局示例，包含 CSS 样式、嵌套轮播图和页面动画 |
+| `CarouselAppDemo` | 将 Carousel 作为完整的应用程序导航容器，展示侧栏路由、嵌套轮播和页面生命周期动画 |
 
 ### 运行示例
 
