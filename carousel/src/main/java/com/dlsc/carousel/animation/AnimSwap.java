@@ -32,7 +32,7 @@ import javafx.util.Duration;
  *   <li><b>0.25 ~ 0.50:</b> dramatic deep arc.</li>
  * </ul>
  *
- * <p>FORWARD: current page exits right, next enters from left.
+ * <p>FORWARD: current page exits left, next enters from right.
  * BACKWARD: reversed.</p>
  *
  * <p>This animation does not use snapshots and is fully resize-safe.</p>
@@ -190,7 +190,8 @@ public class AnimSwap extends CarouselAnimationBase {
     private void updateSwap(double p, double w, double h,
                             Node currentPage, Node nextPage,
                             boolean forward) {
-        double sign = forward ? 1 : -1;
+        // Convention: FORWARD = current exits left, next enters from right
+        double sign = forward ? -1 : 1;
         double travel = w * 0.5;
 
         // Parabolic arc: peaks at p=0.5, value = arcHeight * h
