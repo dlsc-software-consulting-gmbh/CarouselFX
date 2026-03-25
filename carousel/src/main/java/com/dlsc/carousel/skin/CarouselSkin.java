@@ -586,6 +586,17 @@ public class CarouselSkin extends SkinBase<Carousel> {
         if (usedAnimation != null && anim != usedAnimation) {
             TransitionContext clearContext = buildContext(oldIndex, newIndex, carousel);
             usedAnimation.clearEffects(clearContext);
+
+            // When switching away from a multi-page display animation,
+            // remove residual side pages from contentPane. They remain
+            // in pageCache and will be re-added when needed. This
+            // mirrors the cleanup in animationListener (idle path) and
+            // prevents leftover visible side pages from interfering
+            // with the new animation and causing depth buffer artifacts.
+            if (usedAnimation.isMultiPageDisplay()) {
+                Node oldCurrent = pageCache.get(oldIndex);
+                contentPane.getChildren().removeIf(child -> child != oldCurrent);
+            }
         }
 
         Node currentPage = pageCache.get(oldIndex);
