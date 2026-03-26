@@ -17,8 +17,7 @@
     <description>CarouselFX sample applications</description>
 
     <properties>
-        <!-- Samples use a concrete JavaFX version for running demos.
-             Override this to match your JDK version. -->
+        <!-- JavaFX 11 has no mac-aarch64 artifact; use 17 so samples can run on Apple Silicon -->
         <javafx.version>17.0.15</javafx.version>
     </properties>
 
