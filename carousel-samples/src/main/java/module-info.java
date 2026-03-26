@@ -5,5 +5,5 @@ module com.dlsc.carousel.samples {
     requires java.desktop;
 
     exports com.dlsc.carousel.samples;
-    exports com.dlsc.carousel.samples.widget;
+    exports com.dlsc.carousel.samples.control;
 }

@@ -8,7 +8,7 @@ import com.dlsc.carousel.animation.AnimDissolve;
 import com.dlsc.carousel.animation.AnimDomino;
 import com.dlsc.carousel.animation.AnimSelector;
 import com.dlsc.carousel.animation.AnimShatter;
-import com.dlsc.carousel.samples.widget.CircleProgressIndicator;
+import com.dlsc.carousel.samples.control.CircleProgressIndicator;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.PerspectiveCamera;

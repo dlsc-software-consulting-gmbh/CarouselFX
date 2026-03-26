@@ -5,7 +5,7 @@ import com.dlsc.carousel.DisplayMode;
 import com.dlsc.carousel.PageLifecycleEvent;
 import com.dlsc.carousel.animation.*;
 import com.dlsc.carousel.navigator.DefaultNavigator;
-import com.dlsc.carousel.samples.widget.CircleProgressIndicator;
+import com.dlsc.carousel.samples.control.CircleProgressIndicator;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Application;
