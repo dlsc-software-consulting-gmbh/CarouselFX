@@ -8,7 +8,7 @@ import com.dlsc.carousel.animation.AnimDissolve;
 import com.dlsc.carousel.animation.AnimDomino;
 import com.dlsc.carousel.animation.AnimSelector;
 import com.dlsc.carousel.animation.AnimShatter;
-import com.dlsc.gemsfx.CircleProgressIndicator;
+import com.dlsc.carousel.samples.widget.CircleProgressIndicator;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.PerspectiveCamera;
@@ -22,9 +22,9 @@ import javafx.util.StringConverter;
 
 /**
  * Demonstrates the {@code autoPlayProgress} property using a
- * {@link CircleProgressIndicator} from GemsFX. A circular countdown
- * indicator in the bottom-right corner shows the remaining seconds
- * until the next page auto-advance.
+ * {@link CircleProgressIndicator}. A circular countdown indicator in
+ * the bottom-right corner shows the remaining seconds until the next
+ * page auto-advance.
  */
 public class AutoPlayProgressDemo extends Application {
 
@@ -46,7 +46,7 @@ public class AutoPlayProgressDemo extends Application {
         carousel.setHoverPause(false);
         carousel.setArrowDisplayMode(DisplayMode.AUTO);
 
-        // Countdown indicator using GemsFX CircleProgressIndicator
+        // Countdown indicator
         double totalSeconds = INTERVAL.toSeconds();
 
         CircleProgressIndicator indicator = new CircleProgressIndicator(0);
