@@ -55,10 +55,20 @@ public class AnimBlend extends CarouselAnimationBase {
         this.interpolator = interpolator;
     }
 
+    /**
+     * Returns the blend mode.
+     *
+     * @return the blend mode
+     */
     public BlendMode getBlendMode() {
         return blendMode;
     }
 
+    /**
+     * Sets the blend mode.
+     *
+     * @param blendMode the blend mode
+     */
     public void setBlendMode(BlendMode blendMode) {
         this.blendMode = blendMode;
     }

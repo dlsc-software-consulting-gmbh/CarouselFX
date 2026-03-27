@@ -45,18 +45,38 @@ public class AnimSector extends CarouselAnimationBase {
         arcClip.setStartAngle(startAngle);
     }
 
+    /**
+     * Returns the interpolator used for the animation.
+     *
+     * @return the interpolator
+     */
     public Interpolator getInterpolator() {
         return interpolator;
     }
 
+    /**
+     * Sets the interpolator used for the animation.
+     *
+     * @param interpolator the interpolator
+     */
     public void setInterpolator(Interpolator interpolator) {
         this.interpolator = interpolator;
     }
 
+    /**
+     * Returns the arc start angle in degrees.
+     *
+     * @return the start angle
+     */
     public double getStartAngle() {
         return startAngle;
     }
 
+    /**
+     * Sets the arc start angle in degrees.
+     *
+     * @param startAngle the start angle
+     */
     public void setStartAngle(double startAngle) {
         this.startAngle = startAngle;
         arcClip.setStartAngle(startAngle);

@@ -45,26 +45,56 @@ public class AnimRectangle extends CarouselAnimationBase {
         this.arcHeight = arcHeight;
     }
 
+    /**
+     * Returns the interpolator used for the animation.
+     *
+     * @return the interpolator
+     */
     public Interpolator getInterpolator() {
         return interpolator;
     }
 
+    /**
+     * Sets the interpolator used for the animation.
+     *
+     * @param interpolator the interpolator
+     */
     public void setInterpolator(Interpolator interpolator) {
         this.interpolator = interpolator;
     }
 
+    /**
+     * Returns the arc width for rounded corners.
+     *
+     * @return the arc width
+     */
     public double getArcWidth() {
         return arcWidth;
     }
 
+    /**
+     * Sets the arc width for rounded corners.
+     *
+     * @param arcWidth the arc width
+     */
     public void setArcWidth(double arcWidth) {
         this.arcWidth = arcWidth;
     }
 
+    /**
+     * Returns the arc height for rounded corners.
+     *
+     * @return the arc height
+     */
     public double getArcHeight() {
         return arcHeight;
     }
 
+    /**
+     * Sets the arc height for rounded corners.
+     *
+     * @param arcHeight the arc height
+     */
     public void setArcHeight(double arcHeight) {
         this.arcHeight = arcHeight;
     }

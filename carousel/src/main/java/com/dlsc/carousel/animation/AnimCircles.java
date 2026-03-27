@@ -68,22 +68,47 @@ public class AnimCircles extends CarouselAnimationBase {
         }, radiusProperty);
     }
 
+    /**
+     * Returns the interpolator used for the animation.
+     *
+     * @return the interpolator
+     */
     public Interpolator getInterpolator() {
         return interpolator;
     }
 
+    /**
+     * Sets the interpolator used for the animation.
+     *
+     * @param interpolator the interpolator
+     */
     public void setInterpolator(Interpolator interpolator) {
         this.interpolator = interpolator;
     }
 
+    /**
+     * Returns the number of circles used in the reveal.
+     *
+     * @return the circle count
+     */
     public int getCircleCount() {
         return circleCount;
     }
 
+    /**
+     * Returns the maximum radius of each circle.
+     *
+     * @return the maximum radius
+     */
     public double getMaxRadius() {
         return maxRadius;
     }
 
+    /**
+     * Sets the maximum radius of each circle.
+     *
+     * @param maxRadius the maximum radius
+     */
     public void setMaxRadius(double maxRadius) {
         this.maxRadius = maxRadius;
     }

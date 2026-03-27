@@ -89,35 +89,138 @@ public class AnimShapeReveal extends CarouselAnimationBase {
         return path;
     }
 
+    /**
+     * Returns the interpolator used for the transition.
+     *
+     * @return the interpolator
+     */
     public Interpolator getInterpolator() {
         return interpolator;
     }
 
+    /**
+     * Sets the interpolator used for the transition.
+     *
+     * @param interpolator the interpolator
+     */
     public void setInterpolator(Interpolator interpolator) {
         this.interpolator = interpolator;
     }
 
+    /**
+     * Returns the shape used as the reveal clip.
+     *
+     * @return the shape
+     */
     public Shape getShape() {
         return shape;
     }
 
+    /**
+     * Sets the shape used as the reveal clip. If {@code null}, a default star shape is used.
+     *
+     * @param shape the shape
+     */
     public void setShape(Shape shape) {
         this.shape = shape != null ? shape : createDefaultShape();
     }
 
+    /**
+     * Returns the starting X scale factor of the shape.
+     *
+     * @return the starting X scale factor
+     */
     public double getScaleXFrom() { return scaleXFrom; }
+
+    /**
+     * Sets the starting X scale factor of the shape.
+     *
+     * @param v the starting X scale factor
+     */
     public void setScaleXFrom(double v) { scaleXFrom = Math.max(0, v); }
+
+    /**
+     * Returns the ending X scale factor of the shape.
+     *
+     * @return the ending X scale factor
+     */
     public double getScaleXTo() { return scaleXTo; }
+
+    /**
+     * Sets the ending X scale factor of the shape.
+     *
+     * @param v the ending X scale factor
+     */
     public void setScaleXTo(double v) { scaleXTo = Math.max(0, v); }
+
+    /**
+     * Returns the starting Y scale factor of the shape.
+     *
+     * @return the starting Y scale factor
+     */
     public double getScaleYFrom() { return scaleYFrom; }
+
+    /**
+     * Sets the starting Y scale factor of the shape.
+     *
+     * @param v the starting Y scale factor
+     */
     public void setScaleYFrom(double v) { scaleYFrom = Math.max(0, v); }
+
+    /**
+     * Returns the ending Y scale factor of the shape.
+     *
+     * @return the ending Y scale factor
+     */
     public double getScaleYTo() { return scaleYTo; }
+
+    /**
+     * Sets the ending Y scale factor of the shape.
+     *
+     * @param v the ending Y scale factor
+     */
     public void setScaleYTo(double v) { scaleYTo = Math.max(0, v); }
+
+    /**
+     * Returns the starting rotation angle in degrees.
+     *
+     * @return the starting rotation angle
+     */
     public double getRotateFrom() { return rotateFrom; }
+
+    /**
+     * Sets the starting rotation angle in degrees.
+     *
+     * @param v the starting rotation angle
+     */
     public void setRotateFrom(double v) { rotateFrom = v; }
+
+    /**
+     * Returns the ending rotation angle in degrees.
+     *
+     * @return the ending rotation angle
+     */
     public double getRotateTo() { return rotateTo; }
+
+    /**
+     * Sets the ending rotation angle in degrees.
+     *
+     * @param v the ending rotation angle
+     */
     public void setRotateTo(double v) { rotateTo = v; }
+
+    /**
+     * Returns the rotation axis.
+     *
+     * @return the rotation axis
+     */
     public Point3D getRotationAxis() { return rotationAxis; }
+
+    /**
+     * Sets the rotation axis.
+     *
+     * @param axis the rotation axis
+     */
     public void setRotationAxis(Point3D axis) { rotationAxis = axis; }
 
     @Override

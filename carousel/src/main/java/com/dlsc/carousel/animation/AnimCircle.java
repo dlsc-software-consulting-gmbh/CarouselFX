@@ -31,10 +31,20 @@ public class AnimCircle extends CarouselAnimationBase {
     public AnimCircle() {
     }
 
+    /**
+     * Returns the interpolator used for the animation.
+     *
+     * @return the interpolator
+     */
     public Interpolator getInterpolator() {
         return interpolator;
     }
 
+    /**
+     * Sets the interpolator used for the animation.
+     *
+     * @param interpolator the interpolator
+     */
     public void setInterpolator(Interpolator interpolator) {
         this.interpolator = interpolator;
     }

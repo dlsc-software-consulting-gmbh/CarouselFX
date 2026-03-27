@@ -57,10 +57,20 @@ public class AnimGaussianBlur extends CarouselAnimationBase {
         this.interpolator = interpolator;
     }
 
+    /**
+     * Returns the maximum blur radius.
+     *
+     * @return the maximum blur radius
+     */
     public double getRadius() {
         return radius;
     }
 
+    /**
+     * Sets the maximum blur radius.
+     *
+     * @param radius the maximum blur radius
+     */
     public void setRadius(double radius) {
         this.radius = radius;
     }

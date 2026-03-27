@@ -53,10 +53,20 @@ public class AnimMotionBlur extends CarouselAnimationBase {
         this.interpolator = interpolator;
     }
 
+    /**
+     * Returns the blur radius.
+     *
+     * @return the blur radius
+     */
     public double getRadius() {
         return radius;
     }
 
+    /**
+     * Sets the blur radius.
+     *
+     * @param radius the blur radius
+     */
     public void setRadius(double radius) {
         this.radius = Math.max(0, Math.min(63, radius));
     }

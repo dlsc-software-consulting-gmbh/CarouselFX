@@ -80,26 +80,56 @@ public class AnimZoom extends CarouselAnimationBase {
         this.interpolator = interpolator;
     }
 
+    /**
+     * Returns the target scale factor.
+     *
+     * @return the target scale factor
+     */
     public double getScale() {
         return scale;
     }
 
+    /**
+     * Sets the target scale factor.
+     *
+     * @param scale the target scale factor
+     */
     public void setScale(double scale) {
         this.scale = scale;
     }
 
+    /**
+     * Returns the rotation angle in degrees.
+     *
+     * @return the rotation angle in degrees
+     */
     public double getRotateDegrees() {
         return rotateDegrees;
     }
 
+    /**
+     * Sets the rotation angle in degrees.
+     *
+     * @param rotateDegrees the rotation angle in degrees
+     */
     public void setRotateDegrees(double rotateDegrees) {
         this.rotateDegrees = rotateDegrees;
     }
 
+    /**
+     * Returns the rotation axis.
+     *
+     * @return the rotation axis
+     */
     public Point3D getRotationAxis() {
         return rotationAxis;
     }
 
+    /**
+     * Sets the rotation axis.
+     *
+     * @param rotationAxis the rotation axis
+     */
     public void setRotationAxis(Point3D rotationAxis) {
         this.rotationAxis = rotationAxis;
     }

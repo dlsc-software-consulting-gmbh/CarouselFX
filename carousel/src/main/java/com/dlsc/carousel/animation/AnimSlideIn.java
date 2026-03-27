@@ -56,18 +56,38 @@ public class AnimSlideIn extends CarouselAnimationBase {
         this.interpolator = interpolator;
     }
 
+    /**
+     * Returns the horizontal offset for the slide-in.
+     *
+     * @return the horizontal offset
+     */
     public double getOffsetX() {
         return offsetX;
     }
 
+    /**
+     * Sets the horizontal offset for the slide-in.
+     *
+     * @param offsetX the horizontal offset
+     */
     public void setOffsetX(double offsetX) {
         this.offsetX = offsetX;
     }
 
+    /**
+     * Returns the blur radius for the motion blur effect.
+     *
+     * @return the blur radius
+     */
     public double getBlurRadius() {
         return blurRadius;
     }
 
+    /**
+     * Sets the blur radius for the motion blur effect.
+     *
+     * @param blurRadius the blur radius
+     */
     public void setBlurRadius(double blurRadius) {
         this.blurRadius = blurRadius;
     }

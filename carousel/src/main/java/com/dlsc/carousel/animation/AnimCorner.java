@@ -58,26 +58,56 @@ public class AnimCorner extends CarouselAnimationBase {
                 rectTR.translateYProperty(), rectBR.translateXProperty());
     }
 
+    /**
+     * Returns the interpolator used for the animation.
+     *
+     * @return the interpolator
+     */
     public Interpolator getInterpolator() {
         return interpolator;
     }
 
+    /**
+     * Sets the interpolator used for the animation.
+     *
+     * @param interpolator the interpolator
+     */
     public void setInterpolator(Interpolator interpolator) {
         this.interpolator = interpolator;
     }
 
+    /**
+     * Returns the initial X scale of the next page.
+     *
+     * @return the initial X scale
+     */
     public double getScaleX() {
         return scaleX;
     }
 
+    /**
+     * Sets the initial X scale of the next page.
+     *
+     * @param scaleX the initial X scale
+     */
     public void setScaleX(double scaleX) {
         this.scaleX = scaleX;
     }
 
+    /**
+     * Returns the initial Y scale of the next page.
+     *
+     * @return the initial Y scale
+     */
     public double getScaleY() {
         return scaleY;
     }
 
+    /**
+     * Sets the initial Y scale of the next page.
+     *
+     * @param scaleY the initial Y scale
+     */
     public void setScaleY(double scaleY) {
         this.scaleY = scaleY;
     }

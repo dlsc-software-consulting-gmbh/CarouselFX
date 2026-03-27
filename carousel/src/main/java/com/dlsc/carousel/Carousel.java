@@ -124,10 +124,20 @@ public class Carousel extends Control {
         return pageCount;
     }
 
+    /**
+     * Returns the total number of pages in the carousel.
+     *
+     * @return the page count
+     */
     public final int getPageCount() {
         return pageCount.get();
     }
 
+    /**
+     * Sets the total number of pages in the carousel.
+     *
+     * @param value the page count
+     */
     public final void setPageCount(int value) {
         pageCount.set(value);
     }
@@ -145,10 +155,20 @@ public class Carousel extends Control {
         return pageFactory;
     }
 
+    /**
+     * Returns the page factory.
+     *
+     * @return the page factory
+     */
     public final Callback<Integer, Node> getPageFactory() {
         return pageFactory.get();
     }
 
+    /**
+     * Sets the page factory.
+     *
+     * @param factory the page factory
+     */
     public final void setPageFactory(Callback<Integer, Node> factory) {
         pageFactory.set(factory);
     }
@@ -165,6 +185,11 @@ public class Carousel extends Control {
         return selectedIndex.getReadOnlyProperty();
     }
 
+    /**
+     * Returns the index of the currently displayed page.
+     *
+     * @return the selected index
+     */
     public final int getSelectedIndex() {
         return selectedIndex.get();
     }
@@ -195,10 +220,20 @@ public class Carousel extends Control {
         return animation;
     }
 
+    /**
+     * Returns the animation used for page transitions.
+     *
+     * @return the animation
+     */
     public final CarouselAnimation getAnimation() {
         return animation.get();
     }
 
+    /**
+     * Sets the animation used for page transitions.
+     *
+     * @param animation the animation
+     */
     public final void setAnimation(CarouselAnimation animation) {
         this.animation.set(animation);
     }
@@ -215,10 +250,20 @@ public class Carousel extends Control {
         return animationDuration;
     }
 
+    /**
+     * Returns the duration of page transition animations.
+     *
+     * @return the animation duration
+     */
     public final Duration getAnimationDuration() {
         return animationDuration.get();
     }
 
+    /**
+     * Sets the duration of page transition animations.
+     *
+     * @param duration the animation duration
+     */
     public final void setAnimationDuration(Duration duration) {
         animationDuration.set(duration);
     }
@@ -237,10 +282,20 @@ public class Carousel extends Control {
         return autoPlay;
     }
 
+    /**
+     * Returns whether the carousel automatically advances to the next page.
+     *
+     * @return true if auto play is enabled
+     */
     public final boolean isAutoPlay() {
         return autoPlay.get();
     }
 
+    /**
+     * Sets whether the carousel automatically advances to the next page.
+     *
+     * @param value true to enable auto play
+     */
     public final void setAutoPlay(boolean value) {
         autoPlay.set(value);
     }
@@ -258,10 +313,20 @@ public class Carousel extends Control {
         return autoPlayInterval;
     }
 
+    /**
+     * Returns the interval between automatic page advances.
+     *
+     * @return the auto play interval
+     */
     public final Duration getAutoPlayInterval() {
         return autoPlayInterval.get();
     }
 
+    /**
+     * Sets the interval between automatic page advances.
+     *
+     * @param interval the auto play interval
+     */
     public final void setAutoPlayInterval(Duration interval) {
         autoPlayInterval.set(interval);
     }
@@ -278,10 +343,20 @@ public class Carousel extends Control {
         return hoverPause;
     }
 
+    /**
+     * Returns whether auto play pauses when the mouse hovers over the carousel.
+     *
+     * @return true if hover pause is enabled
+     */
     public final boolean isHoverPause() {
         return hoverPause.get();
     }
 
+    /**
+     * Sets whether auto play pauses when the mouse hovers over the carousel.
+     *
+     * @param value true to enable hover pause
+     */
     public final void setHoverPause(boolean value) {
         hoverPause.set(value);
     }
@@ -300,10 +375,22 @@ public class Carousel extends Control {
         return circular;
     }
 
+    /**
+     * Returns whether the carousel wraps around from the last page to the first
+     * and vice versa.
+     *
+     * @return true if circular navigation is enabled
+     */
     public final boolean isCircular() {
         return circular.get();
     }
 
+    /**
+     * Sets whether the carousel wraps around from the last page to the first
+     * and vice versa.
+     *
+     * @param value true to enable circular navigation
+     */
     public final void setCircular(boolean value) {
         circular.set(value);
     }
@@ -322,10 +409,20 @@ public class Carousel extends Control {
         return arrowDisplayMode;
     }
 
+    /**
+     * Returns the display mode of the left/right navigation arrows.
+     *
+     * @return the arrow display mode
+     */
     public final DisplayMode getArrowDisplayMode() {
         return arrowDisplayMode.get();
     }
 
+    /**
+     * Sets the display mode of the left/right navigation arrows.
+     *
+     * @param mode the arrow display mode
+     */
     public final void setArrowDisplayMode(DisplayMode mode) {
         arrowDisplayMode.set(mode);
     }
@@ -345,10 +442,21 @@ public class Carousel extends Control {
         return navigator;
     }
 
+    /**
+     * Returns the bottom navigator (pagination) component.
+     *
+     * @return the navigator
+     */
     public final CarouselNavigator getNavigator() {
         return navigator.get();
     }
 
+    /**
+     * Sets the bottom navigator (pagination) component. Set to {@code null}
+     * to remove the bottom navigation entirely.
+     *
+     * @param navigator the navigator
+     */
     public final void setNavigator(CarouselNavigator navigator) {
         this.navigator.set(navigator);
     }
@@ -365,10 +473,20 @@ public class Carousel extends Control {
         return navigatorDisplayMode;
     }
 
+    /**
+     * Returns the display mode of the bottom navigator.
+     *
+     * @return the navigator display mode
+     */
     public final DisplayMode getNavigatorDisplayMode() {
         return navigatorDisplayMode.get();
     }
 
+    /**
+     * Sets the display mode of the bottom navigator.
+     *
+     * @param mode the navigator display mode
+     */
     public final void setNavigatorDisplayMode(DisplayMode mode) {
         navigatorDisplayMode.set(mode);
     }
@@ -392,10 +510,20 @@ public class Carousel extends Control {
         return cacheDistance;
     }
 
+    /**
+     * Returns the number of pages to keep cached on each side of the current page.
+     *
+     * @return the cache distance
+     */
     public final int getCacheDistance() {
         return cacheDistance.get();
     }
 
+    /**
+     * Sets the number of pages to keep cached on each side of the current page.
+     *
+     * @param distance the cache distance
+     */
     public final void setCacheDistance(int distance) {
         cacheDistance.set(distance);
     }
@@ -414,10 +542,20 @@ public class Carousel extends Control {
         return placeholder;
     }
 
+    /**
+     * Returns the placeholder node displayed when the carousel has no pages.
+     *
+     * @return the placeholder node
+     */
     public final Node getPlaceholder() {
         return placeholder.get();
     }
 
+    /**
+     * Sets the placeholder node displayed when the carousel has no pages.
+     *
+     * @param placeholder the placeholder node
+     */
     public final void setPlaceholder(Node placeholder) {
         this.placeholder.set(placeholder);
     }
@@ -695,10 +833,20 @@ public class Carousel extends Control {
         return onPageCached;
     }
 
+    /**
+     * Sets the handler for page cached events.
+     *
+     * @param handler the event handler
+     */
     public final void setOnPageCached(EventHandler<PageLifecycleEvent> handler) {
         onPageCachedProperty().set(handler);
     }
 
+    /**
+     * Returns the handler for page cached events.
+     *
+     * @return the event handler
+     */
     public final EventHandler<PageLifecycleEvent> getOnPageCached() {
         return onPageCached == null ? null : onPageCached.get();
     }
@@ -736,10 +884,20 @@ public class Carousel extends Control {
         return onPageOpening;
     }
 
+    /**
+     * Sets the handler for page opening events.
+     *
+     * @param handler the event handler
+     */
     public final void setOnPageOpening(EventHandler<PageLifecycleEvent> handler) {
         onPageOpeningProperty().set(handler);
     }
 
+    /**
+     * Returns the handler for page opening events.
+     *
+     * @return the event handler
+     */
     public final EventHandler<PageLifecycleEvent> getOnPageOpening() {
         return onPageOpening == null ? null : onPageOpening.get();
     }
@@ -777,10 +935,20 @@ public class Carousel extends Control {
         return onPageOpened;
     }
 
+    /**
+     * Sets the handler for page opened events.
+     *
+     * @param handler the event handler
+     */
     public final void setOnPageOpened(EventHandler<PageLifecycleEvent> handler) {
         onPageOpenedProperty().set(handler);
     }
 
+    /**
+     * Returns the handler for page opened events.
+     *
+     * @return the event handler
+     */
     public final EventHandler<PageLifecycleEvent> getOnPageOpened() {
         return onPageOpened == null ? null : onPageOpened.get();
     }
@@ -818,10 +986,20 @@ public class Carousel extends Control {
         return onPageClosing;
     }
 
+    /**
+     * Sets the handler for page closing events.
+     *
+     * @param handler the event handler
+     */
     public final void setOnPageClosing(EventHandler<PageLifecycleEvent> handler) {
         onPageClosingProperty().set(handler);
     }
 
+    /**
+     * Returns the handler for page closing events.
+     *
+     * @return the event handler
+     */
     public final EventHandler<PageLifecycleEvent> getOnPageClosing() {
         return onPageClosing == null ? null : onPageClosing.get();
     }
@@ -859,10 +1037,20 @@ public class Carousel extends Control {
         return onPageClosed;
     }
 
+    /**
+     * Sets the handler for page closed events.
+     *
+     * @param handler the event handler
+     */
     public final void setOnPageClosed(EventHandler<PageLifecycleEvent> handler) {
         onPageClosedProperty().set(handler);
     }
 
+    /**
+     * Returns the handler for page closed events.
+     *
+     * @return the event handler
+     */
     public final EventHandler<PageLifecycleEvent> getOnPageClosed() {
         return onPageClosed == null ? null : onPageClosed.get();
     }
@@ -900,10 +1088,20 @@ public class Carousel extends Control {
         return onPageEvicted;
     }
 
+    /**
+     * Sets the handler for page evicted events.
+     *
+     * @param handler the event handler
+     */
     public final void setOnPageEvicted(EventHandler<PageLifecycleEvent> handler) {
         onPageEvictedProperty().set(handler);
     }
 
+    /**
+     * Returns the handler for page evicted events.
+     *
+     * @return the event handler
+     */
     public final EventHandler<PageLifecycleEvent> getOnPageEvicted() {
         return onPageEvicted == null ? null : onPageEvicted.get();
     }

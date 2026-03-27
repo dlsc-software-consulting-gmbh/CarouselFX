@@ -46,26 +46,56 @@ public class AnimSerpentine extends CarouselAnimationBase {
         this.cols = Math.max(1, cols);
     }
 
+    /**
+     * Returns the number of rows in the grid.
+     *
+     * @return the number of rows
+     */
     public int getRows() {
         return rows;
     }
 
+    /**
+     * Sets the number of rows in the grid.
+     *
+     * @param rows the number of rows (minimum 1)
+     */
     public void setRows(int rows) {
         this.rows = Math.max(1, rows);
     }
 
+    /**
+     * Returns the number of columns in the grid.
+     *
+     * @return the number of columns
+     */
     public int getCols() {
         return cols;
     }
 
+    /**
+     * Sets the number of columns in the grid.
+     *
+     * @param cols the number of columns (minimum 1)
+     */
     public void setCols(int cols) {
         this.cols = Math.max(1, cols);
     }
 
+    /**
+     * Returns the interpolator used for the animation.
+     *
+     * @return the interpolator
+     */
     public Interpolator getInterpolator() {
         return interpolator;
     }
 
+    /**
+     * Sets the interpolator used for the animation.
+     *
+     * @param interpolator the interpolator
+     */
     public void setInterpolator(Interpolator interpolator) {
         this.interpolator = interpolator;
     }

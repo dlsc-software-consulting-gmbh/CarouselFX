@@ -42,18 +42,38 @@ public class AnimCircleWave extends CarouselAnimationBase {
         this.circleCount = Math.max(2, circleCount);
     }
 
+    /**
+     * Returns the number of circles in the wave.
+     *
+     * @return the circle count
+     */
     public int getCircleCount() {
         return circleCount;
     }
 
+    /**
+     * Sets the number of circles in the wave.
+     *
+     * @param circleCount the circle count (minimum 2)
+     */
     public void setCircleCount(int circleCount) {
         this.circleCount = Math.max(2, circleCount);
     }
 
+    /**
+     * Returns the interpolator used for the animation.
+     *
+     * @return the interpolator
+     */
     public Interpolator getInterpolator() {
         return interpolator;
     }
 
+    /**
+     * Sets the interpolator used for the animation.
+     *
+     * @param interpolator the interpolator
+     */
     public void setInterpolator(Interpolator interpolator) {
         this.interpolator = interpolator;
     }
