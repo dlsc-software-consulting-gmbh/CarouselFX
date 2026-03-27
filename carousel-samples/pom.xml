@@ -6,8 +6,9 @@
 
     <parent>
         <groupId>com.dlsc.carousel</groupId>
-        <artifactId>carousel-parent</artifactId>
+        <artifactId>parent</artifactId>
         <version>1.0.0</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>carousel-samples</artifactId>
